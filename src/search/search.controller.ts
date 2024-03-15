@@ -34,7 +34,7 @@ export class SearchController {
       'attributesToHighlight',
       'attributesToRetrieve',
     ])
-    filteredOptions.filter = [`chatId = ${chatId}`]
+    // filteredOptions.filter = [`chatId = ${chatId}`]
     filteredOptions.attributesToHighlight = ['text']
     filteredOptions.attributesToRetrieve = [
       'text',
