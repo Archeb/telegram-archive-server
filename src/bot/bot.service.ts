@@ -173,7 +173,7 @@ export class BotService {
     authUrl.searchParams.append('chatId', chatId)
 
     try {
-      await ctx.reply('🔍群内消息搜索试运行中，有问题请点我头像', {
+      await ctx.reply(process.env.WELCOME_MESSAGE || "🔍 点击进入群消息搜索", {
         reply_markup: {
           inline_keyboard: [
             [
